@@ -1,20 +1,20 @@
 public class Search {
-	public void search(int[] array, int x) {
+	public Integer search(int[] array, int x) {
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] == x) {
-				System.out.println(i);
-				System.out.println("Success");
+				return i;
 			} else {
-				System.out.println("x does not live here");
+				return null;
 			}
 		}
+		return x;
 	}
 
 	public static void main(String[] args) {
 		Search s = new Search();
 		int[] a = { 2, 4, 7, 8 };
-		int x = 7;
-		s.search(a, x);
+		int x = 0;
+		System.out.println(s.search(a, x));
 	}
 
 }
