@@ -1,7 +1,9 @@
 public class Search {
 	public int[] search(int[] array) {
+		for (int i = 0; i < array.length; i++) {
+			System.out.println("Hello");
+		}
 		return array;
-
 	}
 
 	public static void main(String[] args) {
